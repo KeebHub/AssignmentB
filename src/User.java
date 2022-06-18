@@ -1,13 +1,28 @@
+import java.util.List;
+
 public class User
 {
     private int type;
     private String name, password, country, gender, Nationality;
-    
+    private List<String> testAns;
+    //Constructor for login
     public User(int type, String name, String password)
     {
         this.type = type;
         this.name = name;
         this.password = password;
+    }
+    
+    //Constructor for viewing results
+    public User(String name, List<String> testAnsList)
+    {
+        this.name = name;
+        this.testAns = testAnsList;
+    }
+    
+    public List<String> gettestAns()
+    {
+        return this.testAns;
     }
     
     public int getType()

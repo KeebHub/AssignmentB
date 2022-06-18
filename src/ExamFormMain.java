@@ -9,7 +9,7 @@ public class ExamFormMain extends Application
     private Scene mainScene;
     private RegistrationForm regisForm;
     private ExamineeForm examForm;
-    private AnalysisForm tForm;
+    private TeacherForm tForm;
     public void start(Stage mainStage)
     {
         mainStage.setTitle("Examination Form");
@@ -22,7 +22,7 @@ public class ExamFormMain extends Application
         {
             if(regisForm.getCurrUser().getType() == 0)
             {
-                tForm = new AnalysisForm();
+                tForm = new TeacherForm();
             }
             else
             {

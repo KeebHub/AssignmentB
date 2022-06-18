@@ -22,7 +22,7 @@ public class RegistrationForm extends Stage {
     private Button butLogin, butSubmit;
     private ComboBox cmbName, cmbGender;
     private List<User> userLists;
-    private AnalysisForm tForm;
+    private TeacherForm tForm;
     private User currUser;
     private HelperFunctions helperFunc = new HelperFunctions();
 
